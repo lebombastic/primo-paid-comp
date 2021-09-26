@@ -1,1 +1,1 @@
-# primo-paid-comp
+# Built with [primo](https://primo.af)
