@@ -5,5 +5,434 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="./styles.css" />
   </head>
-  <body data-instant-intensity="all" class="primo-page"></body>
+  <body data-instant-intensity="all" class="primo-page">
+    <div class="block" id="block-oymqs">
+      <div class="primo-component" id="component-oymqs">
+        <div>
+          <div>
+            <img class="mx-auto" src="https://i.imgur.com/IoyUlFS.png" />
+          </div>
+          <section>
+            <div>
+              <img src="https://i.imgur.com/4Wd7sNm.png" />
+            </div>
+            <nav class="nav-items">
+              <a class="nav-link" href="">Home</a>
+              <a class="nav-link" href="">About</a>
+              <a class="nav-link" href="">Training</a>
+              <a class="nav-link" href="">Resources</a>
+              <a class="nav-link" href="">Doula Hub</a>
+              <button>Contact</button>
+              <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+              </div>
+            </nav>
+          </section>
+        </div>
+        <script type="module">
+                  const primo = {
+                    id: 'oymqs',
+                    data: {"test":{"url":"https://i.imgur.com/IoyUlFS.png","alt":"","size":null},"nav":[{"label":"Home"},{"label":"About"},{"label":"Training"},{"label":"Resources"},{"label":"Doula Hub"}],"contact":"Contact","logo":{"url":"https://i.imgur.com/4Wd7sNm.png","alt":"","size":null}},
+                    fields: [{"id":"sldkl","key":"test","label":"Testing image","value":{"url":"https://i.imgur.com/IoyUlFS.png","alt":"","size":null},"type":"image","fields":[]},{"id":"fdyet","key":"nav","label":"Site Navigation items","value":[{"label":"Home"},{"label":"About"},{"label":"Training"},{"label":"Resources"},{"label":"Doula Hub"}],"type":"repeater","fields":[{"id":"kypwr","key":"label","label":"label","value":"","type":"text"}]},{"id":"tligf","key":"contact","label":"Contact Button","value":"Contact","type":"text","fields":[]},{"id":"ihvcn","key":"logo","label":"Logo","value":{"url":"https://i.imgur.com/4Wd7sNm.png","alt":"","size":null},"type":"image","fields":[]}]
+                  }
+                  const hamburger = document.querySelector(".hamburger");
+          const navMenu = document.querySelector(".nav-items");
+
+          hamburger.addEventListener("click", mobileMenu);
+
+          function mobileMenu() {
+            hamburger.classList.toggle("active");
+            navMenu.classList.toggle("active");
+          }
+          const navLink = document.querySelectorAll(".nav-link");
+
+          navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+          function closeMenu() {
+            hamburger.classList.remove("active");
+            navMenu.classList.remove("active");
+          }
+        </script>
+      </div>
+      <style type="text/css">
+        #component-oymqs section {
+            width: 100%;
+            padding: 1.5rem 2rem;
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            place-items: center;
+            justify-content: space-between;
+          }
+            #component-oymqs section nav {
+              margin-left: 2rem;
+            }
+            #component-oymqs section button {
+              background-color: var(--main-color);
+              color: #FFF;
+              padding: 0.6rem 1.6rem;
+              border-radius: 1.5rem;
+              font-size: 16px;
+              margin-right: 1rem;
+            }
+            #component-oymqs section a {
+              color: #FFFFF;
+              border-bottom: 1px solid transparent;
+              transition: border-color 0.1s;
+              font-size: 18px;
+              margin-left: 1.8rem;
+              font-weight: 400;
+              font-family: var(--main-font);
+            }
+            #component-oymqs section a:hover {
+              border-bottom: 1px solid black;
+            }
+            #component-oymqs section a:nth-child(5){
+              margin-right: 16rem;
+            }
+            #component-oymqs section .hamburger {
+              display: none;
+            }
+            #component-oymqs section .bar {
+              display: block;
+              width: 25px;
+              height: 3px;
+              margin: 5px auto;
+              transition: all 0.3s ease-in-out;
+              background-color: #101010;
+            }
+          @media (max-width: 768px) {
+            #component-oymqs section {
+              justify-content: center;
+              justify-content: space-between;
+            }
+              #component-oymqs section .nav-items {
+                position: absolute;
+                top: 5.5rem;
+                right: 40%;
+                display: grid;
+                border-radius: 10px;
+                transition: 0.3s;
+              }
+                #component-oymqs section .nav-items a {
+                  margin: 1px auto;
+                  font-weight: 300;
+                }
+                #component-oymqs section .nav-items a:last-child {
+                  margin: 1rem auto;
+                }
+              #component-oymqs section .nav-items.active {
+                left: 100%;
+              }
+              #component-oymqs section button {
+                margin: 0.5rem auto;
+              }
+              #component-oymqs section nav > a {
+                margin: 1rem 0;
+              }
+              #component-oymqs section .hamburger {
+                display: block;
+                cursor: pointer;
+                position: fixed;
+                top: 2rem;
+                right: 0.4rem;
+              }
+              #component-oymqs section .hamburger.active span:nth-child(1) {
+                transform: translateY(8px) rotate(45deg);
+              }
+              #component-oymqs section hamburger.active span:nth-child(2) {
+                display: none !important;
+                position: absolute;
+                left: 100%;
+              }
+              #component-oymqs section .hamburger.active span:nth-child(3) {
+                transform: translateY(-8px) rotate(-45deg);
+              }
+          }
+      </style>
+    </div>
+
+    <div class="block" id="block-xrsal">
+      <div class="primo-component" id="component-xrsal">
+        <div>
+          <div>
+            <img class="w-full" src="https://i.imgur.com/xKjbY3M.png" />
+          </div>
+          <section>
+            <div>
+              <h5>Ready to become a Doula?</h5>
+            </div>
+            <div>
+              <span
+                >Read more about what it means to be a doula or contact us with
+                your questions</span
+              >
+            </div>
+            <div class="buttons">
+              <button>
+                <a href="#">Learn More</a>
+              </button>
+              <button>
+                <a href="#">Contact</a>
+              </button>
+            </div>
+          </section>
+        </div>
+      </div>
+      <style type="text/css">
+        #component-xrsal section {
+            background-color: var(--main-color);
+            display: grid;
+            grid-auto-flow: row;
+            justify-content: center;
+            margin: 3rem auto;
+            color: white;
+            text-align: center;
+            width: 100%;
+            padding: 0px 180px 25px 180px;
+            font-family: var(--main-font);
+          }
+            #component-xrsal section div:nth-child(1){
+              padding-bottom: 1rem;
+              padding-top: 4rem;
+              font-size: 3.052rem;
+            }
+            #component-xrsal section div:nth-child(2){
+              font-size: 1rem;
+              font-weight: 400;
+            }
+            #component-xrsal section .buttons {
+              padding-top: 32px;
+              padding-bottom: 3rem;
+              font-size: 1rem;
+            }
+            #component-xrsal section .buttons button:first-child{
+                border: 2px solid #FFFFFF;
+                box-sizing: border-box;
+                border-radius: 20px;
+                padding: 8px 16px;
+                margin-right: 1.3rem;
+              }
+            #component-xrsal section .buttons button:nth-child(2){
+                background: var(--btn-color);
+                border: 2px solid var(--btn-color);
+                box-sizing: border-box;
+                border-radius: 20px;
+                padding: 0.4rem 2rem;
+              }
+            #component-xrsal section a {
+              font-size: 1rem;
+              font-weight: 400;
+              color: #FFFFFF;
+            }
+          @media (max-width: 768px) {
+          }
+      </style>
+    </div>
+
+    <div class="block" id="block-wewak">
+      <div class="primo-component" id="component-wewak">
+        <div>
+          <section>
+            <p class="title">See what Doulas are saying</p>
+            <div class="content">
+              <svg
+                class="doubleComma"
+                width="33"
+                height="28"
+                viewBox="0 0 33 28"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M27 14V13.5H26.5H21.5C20.1199 13.5 19 12.3801 19 11V3C19 1.61989 20.1199 0.5 21.5 0.5H29.5C30.8801 0.5 32 1.61989 32 3V18C32 23.2489 27.7489 27.5 22.5 27.5H22C21.4449 27.5 21 27.0551 21 26.5V23.5C21 22.9449 21.4449 22.5 22 22.5H22.5C24.9824 22.5 27 20.4824 27 18V14ZM9 14V13.5H8.5H3.5C2.11989 13.5 1 12.3801 1 11V3C1 1.61989 2.11989 0.5 3.5 0.5H11.5C12.8801 0.5 14 1.61989 14 3V18C14 23.2489 9.74886 27.5 4.5 27.5H4C3.44489 27.5 3 27.0551 3 26.5V23.5C3 22.9449 3.44489 22.5 4 22.5H4.5C6.98239 22.5 9 20.4824 9 18V14Z"
+                  fill="#5D5FEF"
+                  stroke="#5D5FEF"
+                />
+              </svg>
+              <p class="article">
+                I am amazed at the training I learned so much from the training.
+                I now feel confident to face natural labor head on and help
+                other women do the same. I am thoroughly excited for the journey
+                ahead.
+              </p>
+              <p class="author">Nancy Nguyen</p>
+              <p class="position">Doula Training Graduate</p>
+              <a href="" class="next">
+                <svg
+                  width="32"
+                  height="32"
+                  viewBox="0 0 32 32"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0.5 16C0.5 24.5625 7.4375 31.5 16 31.5C24.5625 31.5 31.5 24.5625 31.5 16C31.5 7.4375 24.5625 0.5 16 0.5C7.4375 0.5 0.5 7.4375 0.5 16ZM16 2.5C23.4188 2.5 29.5 8.50625 29.5 16C29.5 23.4188 23.4937 29.5 16 29.5C8.58125 29.5 2.5 23.4937 2.5 16C2.5 8.58125 8.50625 2.5 16 2.5ZM21.4125 16.5312L14.2188 23.7188C13.925 24.0125 13.45 24.0125 13.1562 23.7188L12.7125 23.275C12.4187 22.9812 12.4187 22.5063 12.7125 22.2125L18.9375 16L12.7188 9.78125C12.425 9.4875 12.425 9.0125 12.7188 8.71875L13.1625 8.275C13.4563 7.98125 13.9313 7.98125 14.225 8.275L21.4188 15.4625C21.7063 15.7625 21.7063 16.2375 21.4125 16.5312Z"
+                    fill="#252428"
+                  />
+                </svg>
+              </a>
+            </div>
+          </section>
+        </div>
+      </div>
+      <style type="text/css">
+        #component-wewak section {
+            margin:10;
+          }
+            #component-wewak section .title {
+              font-family: Roboto;
+              font-style: normal;
+              font-weight: 500;
+              font-size: 49px;
+              line-height: 56px;
+              text-align: center;
+              letter-spacing: -0.04em;
+              color: #252428;
+              padding: 20px;
+            }
+            #component-wewak section svg {
+              display: flex;
+              position: relative;
+              left: 0px;
+              top: -19px;
+            }
+            #component-wewak section .content {
+              background-color: #E8E8FD;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+              margin: 0 auto;
+              padding: 48px 35px;
+              position: static;
+              width: 745px;
+              height: 335px;
+              left: 104px;
+              top: 0px;
+              box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.04);
+              border-radius: 20px;
+            }
+            #component-wewak section .content .article {
+                position: relative;
+                width: 675px;
+                height: 80px;
+                left: 0px;
+                top: 14px;
+                font-family: Inter;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 28px;
+                text-align: center;
+                letter-spacing: -0.02em;
+                color: #252428;
+              }
+            #component-wewak section .content .author {
+                position: relative;
+                width: 104px;
+                height: 24px;
+                left: -1px;
+                top: 42px;
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 24px;
+                text-align: center;
+                color: #252428;
+              }
+            #component-wewak section .content .position {
+                position: relative;
+                width: 200px;
+                height: 24px;
+                left: 0px;
+                top: 44px;
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 24px;
+                text-align: center;
+                color: #706E78;
+              }
+            #component-wewak section .content .next {
+                position: relative;
+                width: 32px;
+                height: 32px;
+                left: 459px;
+                top: -69px;
+              }
+          @media (max-width: 700px) {
+            #component-wewak section {
+              width: 350px;
+              align-item: center;
+              margin: 0 auto;
+            }
+              #component-wewak section .title {
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 39.0625px;
+                line-height: 48px;
+                width: 300px;
+                text-align: center;
+                self-align: center;
+              }
+              #component-wewak section .content {
+                width: 328px;
+                height: 359px;
+                padding: 32px, 0px, 39px, 0px;
+                border-radius: 10px;
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding: 0px;
+                position: static;
+                width: 328px;
+                height: 400px;
+                left: 0px;
+                top: -46.5px;
+              }
+                #component-wewak section .content svg {
+                  position: relative;
+                  left: 0px;
+                  top: -80px;
+                  width: 32px;
+                  height: 28px;
+                }
+                #component-wewak section .content .article {
+                  display: flex;
+                  font-family: Roboto;
+                  font-style: normal;
+                  font-weight: normal;
+                  line-height: 24px;
+                  text-align: center;
+                  width: 300px;
+                  position: relative;
+                  left: 0px;
+                  top: -60px;
+                }
+                #component-wewak section .content .author {
+                  position: relative;
+                  left: 0px;
+                  top: 50px;
+                }
+                #component-wewak section .content .position {
+                  position: relative;
+                  top: 50px;
+                }
+                #component-wewak section .content .next {
+                  position: relative;
+                  left: 140px;
+                  top: 225px;
+                }
+          }
+      </style>
+    </div>
+  </body>
 </html>
