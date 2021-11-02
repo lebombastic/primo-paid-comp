@@ -13,38 +13,43 @@
             <img class="mx-auto" src="https://i.imgur.com/IoyUlFS.png" />
           </div>
           <section>
-            <div>
-              <img src="https://i.imgur.com/4Wd7sNm.png" />
-            </div>
             <nav class="nav-items">
               <a class="nav-link" href="">Home</a>
               <a class="nav-link" href="">About</a>
               <a class="nav-link" href="">Training</a>
               <a class="nav-link" href="">Resources</a>
               <a class="nav-link" href="">Doula Hub</a>
-              <button>Contact</button>
               <div class="hamburger">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
               </div>
             </nav>
+            <div class="image">
+              <img src="https://i.imgur.com/4Wd7sNm.png" />
+            </div>
+            <div class="lefties">
+              <div class="extras nav-items"></div>
+              <button>Contact</button>
+            </div>
           </section>
         </div>
         <script type="module">
                   const primo = {
                     id: 'oymqs',
-                    data: {"test":{"url":"https://i.imgur.com/IoyUlFS.png","alt":"","size":null},"nav":[{"label":"Home"},{"label":"About"},{"label":"Training"},{"label":"Resources"},{"label":"Doula Hub"}],"contact":"Contact","logo":{"url":"https://i.imgur.com/4Wd7sNm.png","alt":"","size":null}},
-                    fields: [{"id":"sldkl","key":"test","label":"Testing image","value":{"url":"https://i.imgur.com/IoyUlFS.png","alt":"","size":null},"type":"image","fields":[]},{"id":"fdyet","key":"nav","label":"Site Navigation items","value":[{"label":"Home"},{"label":"About"},{"label":"Training"},{"label":"Resources"},{"label":"Doula Hub"}],"type":"repeater","fields":[{"id":"kypwr","key":"label","label":"label","value":"","type":"text"}]},{"id":"tligf","key":"contact","label":"Contact Button","value":"Contact","type":"text","fields":[]},{"id":"ihvcn","key":"logo","label":"Logo","value":{"url":"https://i.imgur.com/4Wd7sNm.png","alt":"","size":null},"type":"image","fields":[]}]
+                    data: {"test":{"url":"https://i.imgur.com/IoyUlFS.png","alt":"","size":null},"nav":[{"label":"Home"},{"label":"About"},{"label":"Training"},{"label":"Resources"},{"label":"Doula Hub"}],"contact":"Contact","logo":{"url":"https://i.imgur.com/4Wd7sNm.png","alt":"","size":null},"nav2":[{"label2":"Doula Hub"},{"label2":"Doctor Hub"}]},
+                    fields: [{"id":"sldkl","key":"test","label":"Testing image","value":{"url":"https://i.imgur.com/IoyUlFS.png","alt":"","size":null},"type":"image","fields":[]},{"id":"fdyet","key":"nav","label":"Site Navigation items","value":[{"label":"Home"},{"label":"About"},{"label":"Training"},{"label":"Resources"},{"label":"Doula Hub"}],"type":"repeater","fields":[{"id":"kypwr","key":"label","label":"label","value":"","type":"text"}]},{"id":"tligf","key":"contact","label":"Contact Button","value":"Contact","type":"text","fields":[]},{"id":"ihvcn","key":"logo","label":"Logo","value":{"url":"https://i.imgur.com/4Wd7sNm.png","alt":"","size":null},"type":"image","fields":[]},{"id":"sjzpg","key":"nav2","label":"Site navigations extra items","value":[{"label2":"Doula Hub"},{"label2":"Doctor Hub"}],"type":"repeater","fields":[{"id":"ydstq","key":"label2","label":"extra labels","value":"","type":"text"}]}]
                   }
                   const hamburger = document.querySelector(".hamburger");
           const navMenu = document.querySelector(".nav-items");
+          const navMenu2 = document.querySelector(".extras");
 
           hamburger.addEventListener("click", mobileMenu);
 
           function mobileMenu() {
             hamburger.classList.toggle("active");
             navMenu.classList.toggle("active");
+            navMenu2.classList.toggle("active");
           }
           const navLink = document.querySelectorAll(".nav-link");
 
@@ -67,7 +72,10 @@
             justify-content: space-between;
           }
             #component-oymqs section nav {
-              margin-left: 2rem;
+              margin-left: 0rem;
+            }
+            #component-oymqs section .image {
+              width: 307px;
             }
             #component-oymqs section button {
               background-color: var(--main-color);
@@ -82,15 +90,15 @@
               border-bottom: 1px solid transparent;
               transition: border-color 0.1s;
               font-size: 18px;
-              margin-left: 1.8rem;
               font-weight: 400;
               font-family: var(--main-font);
+              margin-left: 22px;
             }
             #component-oymqs section a:hover {
-              border-bottom: 1px solid black;
+              border-bottom: 2px solid black;
             }
-            #component-oymqs section a:nth-child(5){
-              margin-right: 16rem;
+            #component-oymqs section .extras{
+              margin-right: 24px;
             }
             #component-oymqs section .hamburger {
               display: none;
@@ -102,6 +110,10 @@
               margin: 5px auto;
               transition: all 0.3s ease-in-out;
               background-color: #101010;
+            }
+            #component-oymqs section .lefties {
+              display: flex;
+              align-items: center;
             }
           @media (max-width: 768px) {
             #component-oymqs section {
@@ -120,14 +132,16 @@
                   margin: 1px auto;
                   font-weight: 300;
                 }
-                #component-oymqs section .nav-items a:last-child {
-                  margin: 1rem auto;
-                }
+              #component-oymqs section .extras {
+                position: absolute;
+                top: 13rem;
+                right: 35%;
+              }
               #component-oymqs section .nav-items.active {
-                left: 100%;
+                color: white;
               }
               #component-oymqs section button {
-                margin: 0.5rem auto;
+                margin: 0.5rem;
               }
               #component-oymqs section nav > a {
                 margin: 1rem 0;
@@ -136,8 +150,8 @@
                 display: block;
                 cursor: pointer;
                 position: fixed;
-                top: 2rem;
-                right: 0.4rem;
+                top: 3.5rem;
+                right: 0.6rem;
               }
               #component-oymqs section .hamburger.active span:nth-child(1) {
                 transform: translateY(8px) rotate(45deg);
@@ -213,7 +227,7 @@
                 box-sizing: border-box;
                 border-radius: 20px;
                 padding: 8px 16px;
-                margin-right: 1.3rem;
+                margin-right: 8px;
               }
             #component-xrsal section .buttons button:nth-child(2){
                 background: var(--btn-color);
@@ -228,6 +242,13 @@
               color: #FFFFFF;
             }
           @media (max-width: 768px) {
+              #component-xrsal section h5 {
+                font-size: 31.25px;
+                line-height: 40px;
+                text-align: center;
+                letter-spacing: -0.02em;
+                width: 298px;
+              }
           }
       </style>
     </div>
@@ -431,6 +452,289 @@
                   left: 140px;
                   top: 225px;
                 }
+          }
+      </style>
+    </div>
+
+    <div class="block" id="block-vyzos">
+      <div class="primo-component" id="component-vyzos">
+        <div>
+          <div>
+            <img class="mx-auto" src="" />
+          </div>
+          <section>
+            <div class="content">
+              <h1></h1>
+              <p></p>
+              <button></button>
+            </div>
+            <img src="" />
+          </section>
+        </div>
+      </div>
+      <style type="text/css">
+        #component-vyzos section {
+            width: 100%;
+            margin: 0 auto;
+            padding: 2rem 2rem;
+            max-width: 1400px;
+            display: grid;
+            place-items: center;
+          }
+          #component-vyzos .content {
+            grid-column: 1;
+            border-radius: 10px;
+            padding: 91px 66px;
+            position: relative;
+            left: 96px;
+            top: -15px;
+            background: #ffffff;
+            width: 498px;
+          }
+          #component-vyzos img {
+            grid-column: 2;
+          }
+          #component-vyzos h1 {
+            font-family: var(--ff-sofi);
+            font-weight: 400;
+            font-size: 31.25px;
+            line-height: 40px;
+            letter-spacing: -0.02em;
+            padding-bottom: 24px;
+          }
+          #component-vyzos p {
+            padding-bottom: 40px;
+            font-family: var(--ff-sofi);
+            font-weight: 200;
+            font-size: 16px;
+            line-height: 24px;
+          }
+          #component-vyzos button {
+            font-family: var(--ff-sofi);
+            background: var(--main-color);
+            font-size: 16px;
+            line-height: 20px;
+            color: #ffffff;
+            padding: 8px 16px;
+            border-radius: 20px;
+          }
+          @media (max-width: 768px) {
+            #component-vyzos section {
+              padding: 2px 2px;
+              position: absolute;
+            }
+              #component-vyzos section .content {
+                grid-row: 2;
+                width: 247px;
+                padding: 24px 24px;
+                position: relative;
+                left: 174px;
+                z-index: 1;
+                top: -31px;
+              }
+                #component-vyzos section .content h1 {
+                  font-size: 25px;
+                  line-height: 32px;
+                  letter-spacing: -0.02em;
+                }
+                #component-vyzos section .content p {
+                  font-size: 16px;
+                  line-height: 20px;
+                }
+              #component-vyzos section img {
+                width: 271px;
+                border-radius: 0px 0px 10px 10px;
+                position: relative;
+                right: 191px;
+              }
+          }
+      </style>
+    </div>
+
+    <div class="block" id="block-hhulm">
+      <div class="primo-component" id="component-hhulm">
+        <div>
+          <section>
+            <div class="head">
+              <h5></h5>
+              <p></p>
+            </div>
+            <div class="cards">
+              <div class="items">
+                <img src="" />
+                <h6></h6>
+                <img src="" />
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+      <style type="text/css">
+        #component-hhulm section {
+            width: 100%;
+            margin: 0 auto;
+            padding: 0 2rem;
+            max-width: 1400px;
+            display: grid;
+            place-items: center;
+          }
+          #component-hhulm .cards {
+            display: grid;
+            grid-auto-flow: column;
+            grid-gap: 100px;
+            text-align: center;
+            margin-top: 48px;
+          }
+          #component-hhulm .cards .items {
+              padding: 24px 10px;
+              width: 273px;
+              justify-items: center;
+            }
+          #component-hhulm .cards .items img {
+                margin: 0 auto;
+                weight: 40px;
+              }
+          #component-hhulm .cards .items h6 {
+                margin-top: 8px;
+                margin-bottom: 16px;
+                font-family: var(--ff-sofi);
+                font-size: 25px;
+                line-height: 32px;
+                letter-spacing: -0.02em;
+              }
+          #component-hhulm .cards .items P {
+                font-size: 18px;
+                line-height: 24px;
+                text-align: center;
+                font-family: var(--ff-sofi);
+                margin-bottom: 16px;
+              }
+          #component-hhulm button {
+            color: var(--main-color);
+            border-bottom: 1px solid #5D5FEF;
+          }
+          #component-hhulm .head {
+            margin-top: 2rem;
+          }
+          #component-hhulm .head h5{
+              text-align: center;
+              font-size: 31.25px;
+              line-height: 40px;
+              letter-spacing: -0.02em;
+              font-family: var(--ff-sofi);
+            }
+          #component-hhulm .head p {
+              font-family: var(--ff-sofi);
+              font-size: 18px;
+              line-height: 24px;
+              text-align: center;
+              color: #000000;
+              margin-top: 16px;
+            }
+          #component-hhulm .items:nth-child(2){
+            order: 3;
+          }
+          @media (max-width: 768px) {
+              #component-hhulm section .cards {
+                grid-auto-flow: row;
+                gap: 56px;
+              }
+              #component-hhulm .head p {
+                width: 349px;
+              }
+          }
+      </style>
+    </div>
+
+    <div class="block" id="block-tdlqf">
+      <div class="primo-component" id="component-tdlqf">
+        <div>
+          <img class="mx-auto" src="https://i.imgur.com/WhjQ4U5.png" />
+          <section>
+            <div class="left">
+              <h6></h6>
+              <svg
+                width="32"
+                height="33"
+                viewBox="0 0 32 33"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_179:1494)">
+                  <path
+                    d="M31.5 16.0144C31.5 7.4519 24.5625 0.514404 16 0.514404C7.4375 0.514404 0.5 7.4519 0.5 16.0144C0.5 23.7507 6.16813 30.1632 13.5781 31.3269V20.495H9.64062V16.0144H13.5781V12.5994C13.5781 8.71503 15.8906 6.5694 19.4325 6.5694C21.1287 6.5694 22.9025 6.8719 22.9025 6.8719V10.6844H20.9475C19.0225 10.6844 18.4219 11.8794 18.4219 13.105V16.0144H22.7206L22.0331 20.495H18.4219V31.3269C25.8319 30.1632 31.5 23.7507 31.5 16.0144Z"
+                    fill="#7879F1"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_179:1494">
+                    <rect
+                      width="32"
+                      height="32"
+                      fill="white"
+                      transform="translate(0 0.0144043)"
+                    />
+                  </clipPath>
+                </defs>
+              </svg>
+            </div>
+            <div class="right"></div>
+          </section>
+        </div>
+      </div>
+      <style type="text/css">
+        #component-tdlqf section {
+            display: flex;
+            width: 100%;
+            margin: 0 auto;
+            padding: 0 2rem;
+            max-width: 1400px;
+            justify-content: space-between;
+            line-height: 20px;
+            text-align: center;
+            font-family: var(--ff-sofi);
+          }
+            #component-tdlqf section .left {
+              display: flex;
+              align-items: center;
+              margin-left: 1.2rem;
+              font-size: 16px;
+            }
+            #component-tdlqf section .right {
+              align-self: center;
+              margin-right: 1.3rem;
+              font-size: 16px;
+            }
+            #component-tdlqf section .right a {
+                padding: 0 8px;
+              }
+            #component-tdlqf section .right a:nth-child(2) {
+                color: var(--main-color);
+                font-weight: 500;
+              }
+            #component-tdlqf section .right a:nth-child(3) {
+                color: var(--main-color);
+                font-weight: 500;
+              }
+            #component-tdlqf section svg {
+              margin-left: 16px;
+            }
+          @media (max-width: 768px) {
+            #component-tdlqf section {
+              display: grid;
+              grid-auto-flow: row;
+            }
+              #component-tdlqf section .right {
+                margin-left: 10px;
+                margin-top: 17px;
+              }
+              #component-tdlqf section .right a:nth-child(1) {
+                background-color: blue;
+                display: none;
+              }
+              #component-tdlqf section svg {
+                width: 24px;
+              }
           }
       </style>
     </div>

@@ -540,6 +540,17 @@ video {
   width: 100%;
 }
 
+.transform {
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  transform: translateX(var(--tw-translate-x)) translateY(var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 @-webkit-keyframes spin {
   to {
     transform: rotate(360deg);
@@ -608,10 +619,13 @@ video {
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
+@import url('https://github.com/lebombastic/fonts/raw/main/sofia.css');
+
 :root {
   --main-font: 'Roboto', sans-serif;
   --btn-color: #171AE8;
   --main-color: #7879F1;
+  --ff-sofi: 'sofia', sans-serif;
 }
 
 .primo-copy {
